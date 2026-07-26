@@ -214,12 +214,12 @@ optprob = OptimizationProblem(obj_short, LocIniPar, lb = xlow_bounds, ub = xhigh
 ```
 
 ```
-1.787 s (2620530 allocations: 366.28 MiB)
+1.574 s (4936672 allocations: 345.81 MiB)
 retcode: MaxIters
 u: 3-element Vector{Float64}:
- 10.000000325155142
- 27.99999894222209
-  2.6599999340590954
+ 10.000000134726305
+ 27.99999926746213
+  2.659999943895043
 ```
 
 
@@ -233,12 +233,12 @@ optprob = OptimizationProblem(obj_short, LocIniPar, lb = xlow_bounds, ub = xhigh
 ```
 
 ```
-1.813 s (2618297 allocations: 365.98 MiB)
+1.598 s (4951219 allocations: 346.82 MiB)
 retcode: MaxIters
 u: 3-element Vector{Float64}:
-  9.999999991436729
- 27.999998651166205
-  2.6600000924771594
+  9.99999998742873
+ 28.000000098841983
+  2.660000180032784
 ```
 
 
@@ -254,12 +254,12 @@ optprob = OptimizationProblem(obj_short, LocIniPar, lb = xlow_bounds, ub = xhigh
 ```
 
 ```
-2.603 s (2657722 allocations: 370.72 MiB)
+2.458 s (5015351 allocations: 351.02 MiB)
 retcode: MaxIters
 u: 3-element Vector{Float64}:
-  9.999999487467514
- 28.000002311139056
-  2.6600007798311975
+ 10.000000021489956
+ 28.00000039186286
+  2.659999822244038
 ```
 
 
@@ -285,10 +285,10 @@ gToolkit.MTKParameters{Vector{Float64}, Tuple{}, Tuple{}, Tuple{}, Tuple{}}
 , SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, ModelingToolkit.var
 "#f#1091"{RuntimeGeneratedFunctions.RuntimeGeneratedFunction{(:ˍ₋arg1, :ˍ₋a
 rg2, :t), ModelingToolkit.var"#_RGF_ModTag", ModelingToolkit.var"#_RGF_ModT
-ag", (0x55fcd638, 0xa4b1dffa, 0x72e0d70e, 0xfb4b4558, 0x9a521e2e), Nothing}
+ag", (0xf6148194, 0x69c6a1b4, 0x166141bc, 0xc8426f49, 0x00cbc07d), Nothing}
 , RuntimeGeneratedFunctions.RuntimeGeneratedFunction{(:ˍ₋out, :ˍ₋arg1, :ˍ₋a
 rg2, :t), ModelingToolkit.var"#_RGF_ModTag", ModelingToolkit.var"#_RGF_ModT
-ag", (0x3a06fcd3, 0x7dc4b06a, 0xe87c0211, 0x324e7a66, 0xc9a86417), Nothing}
+ag", (0xf74302d5, 0xff228d84, 0xf1a7bfb9, 0xf2c5938b, 0x4b39fbde), Nothing}
 }, LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, 
 Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, ModelingTool
 kit.ObservedFunctionCache{ModelingToolkit.ODESystem}, Nothing, ModelingTool
@@ -312,7 +312,7 @@ optprob = OptimizationProblem(obj_short, GloIniPar, lb = first.(LooserBounds), u
 ```
 
 ```
-3.206 s (3242533 allocations: 445.93 MiB)
+3.006 s (6105411 allocations: 423.12 MiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
  10.000000000079076
@@ -328,12 +328,12 @@ opt = Opt(:GN_CRS2_LM, 3)
 ```
 
 ```
-1.228 s (1236197 allocations: 170.00 MiB)
+1.112 s (2343807 allocations: 162.42 MiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
- 10.000000000005235
- 27.99999999999383
-  2.659999999991468
+ 10.000000000005867
+ 27.999999999884476
+  2.6600000000086874
 ```
 
 
@@ -344,12 +344,12 @@ opt = Opt(:GN_ISRES, 3)
 ```
 
 ```
-3.695 s (3760136 allocations: 517.13 MiB)
+3.437 s (7080144 allocations: 490.67 MiB)
 retcode: MaxIters
 u: 3-element Vector{Float64}:
- 10.000746393718009
- 27.996346412002794
-  2.6591188763412896
+ 10.001303175633765
+ 27.997049299528168
+  2.659084538105345
 ```
 
 
@@ -360,12 +360,12 @@ opt = Opt(:GN_ESCH, 3)
 ```
 
 ```
-3.671 s (3760136 allocations: 517.13 MiB)
+3.407 s (7080144 allocations: 490.67 MiB)
 retcode: MaxIters
 u: 3-element Vector{Float64}:
-  9.541576710812315
- 30.007525648385904
-  3.0345825038371723
+  9.794788290460998
+ 29.07613605037703
+  2.9780990755745753
 ```
 
 
@@ -381,12 +381,12 @@ optprob = OptimizationProblem(obj_short, LocIniPar, lb = xlow_bounds, ub = xhigh
 ```
 
 ```
-31.136 ms (32997 allocations: 4.52 MiB)
+29.089 ms (61923 allocations: 4.29 MiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
- 10.000000000000089
- 27.99999999999836
-  2.6600000000010318
+ 10.00000000000008
+ 27.999999999998437
+  2.6600000000010393
 ```
 
 
@@ -397,7 +397,7 @@ opt = Opt(:LN_NELDERMEAD, 3)
 ```
 
 ```
-101.411 ms (107445 allocations: 14.76 MiB)
+95.032 ms (202107 allocations: 14.00 MiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
   9.999999999999293
@@ -413,12 +413,12 @@ opt = Opt(:LD_SLSQP, 3)
 ```
 
 ```
-15.400 ms (15092 allocations: 2.53 MiB)
+14.297 ms (28389 allocations: 2.42 MiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
- 10.000000000000107
+ 10.000000000000105
  27.999999999998312
-  2.6600000000010358
+  2.6600000000010326
 ```
 
 
@@ -429,12 +429,12 @@ opt = Opt(:LN_COBYLA, 3)
 ```
 
 ```
-190.557 ms (201069 allocations: 27.63 MiB)
+198.838 ms (421587 allocations: 29.21 MiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
-  9.999999999998614
- 28.00000000000312
-  2.660000000002369
+  9.999999999997824
+ 28.000000000005663
+  2.6600000000031625
 ```
 
 
@@ -445,12 +445,12 @@ opt = Opt(:LN_NEWUOA_BOUND, 3)
 ```
 
 ```
-80.287 ms (56168 allocations: 7.71 MiB)
+60.874 ms (77332 allocations: 5.36 MiB)
 retcode: Success
 u: 3-element Vector{Float64}:
- 10.000004314773646
- 27.999981806974528
-  2.6599957890239403
+ 10.000008501682922
+ 27.999958414119387
+  2.6599936149968886
 ```
 
 
@@ -461,12 +461,12 @@ opt = Opt(:LN_PRAXIS, 3)
 ```
 
 ```
-26.272 ms (33291 allocations: 4.73 MiB)
-retcode: Success
+21.462 ms (52838 allocations: 4.25 MiB)
+retcode: Failure
 u: 3-element Vector{Float64}:
- 10.000000000000021
- 27.999999999998412
-  2.660000000001118
+  9.999999999999117
+ 28.000000000016488
+  2.6600000000011836
 ```
 
 
@@ -477,7 +477,7 @@ opt = Opt(:LN_SBPLX, 3)
 ```
 
 ```
-359.074 ms (379661 allocations: 52.20 MiB)
+335.895 ms (714683 allocations: 49.53 MiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
  10.000000000017945
@@ -493,12 +493,12 @@ opt = Opt(:LD_MMA, 3)
 ```
 
 ```
-131.298 ms (126124 allocations: 21.77 MiB)
+122.285 ms (238922 allocations: 20.88 MiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
-  9.999999999980686
- 28.000000000097163
-  2.6600000000171913
+  9.999999999981885
+ 28.00000000009333
+  2.6600000000167072
 ```
 
 
@@ -509,12 +509,12 @@ opt = Opt(:LD_LBFGS, 3)
 ```
 
 ```
-18.512 ms (17881 allocations: 3.08 MiB)
+17.204 ms (33802 allocations: 2.95 MiB)
 retcode: Success
 u: 3-element Vector{Float64}:
- 10.000000000000492
+ 10.00000000000049
  27.99999999999682
-  2.6600000000007737
+  2.660000000000771
 ```
 
 
@@ -525,12 +525,12 @@ opt = Opt(:LD_TNEWTON_PRECOND_RESTART, 3)
 ```
 
 ```
-20.951 ms (20314 allocations: 3.48 MiB)
+19.741 ms (38285 allocations: 3.34 MiB)
 retcode: Success
 u: 3-element Vector{Float64}:
  10.000000000000087
  27.99999999999839
-  2.6600000000010335
+  2.660000000001033
 ```
 
 
@@ -556,12 +556,12 @@ optprob = OptimizationProblem(obj, GloIniPar, lb = first.(LooserBounds), ub = la
 ```
 
 ```
-14.953 s (12664351 allocations: 1.65 GiB)
+14.264 s (25119140 allocations: 1.64 GiB)
 retcode: MaxIters
 u: 3-element Vector{Float64}:
- 10.000168259883049
- 27.999432515877483
-  2.659869374903445
+  9.99991477999509
+ 28.00001987330375
+  2.6602675645394194
 ```
 
 
@@ -579,7 +579,7 @@ opt = Opt(:GN_ORIG_DIRECT_L, 3)
 ```
 
 ```
-23.500 s (19943279 allocations: 2.59 GiB)
+23.232 s (39601421 allocations: 2.58 GiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
  10.000000041311779
@@ -595,12 +595,12 @@ opt = Opt(:GN_CRS2_LM, 3)
 ```
 
 ```
-12.692 s (10774119 allocations: 1.40 GiB)
+12.235 s (21363509 allocations: 1.39 GiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
-  9.999999999987871
- 28.00000000002423
-  2.6600000000058848
+  9.999999999977874
+ 28.00000000007182
+  2.6600000000289095
 ```
 
 
@@ -611,12 +611,12 @@ opt = Opt(:GN_ISRES, 3)
 ```
 
 ```
-118.582 s (101403111 allocations: 13.19 GiB)
+110.471 s (189210997 allocations: 12.31 GiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
-  9.999999999986317
- 28.000000000022197
-  2.659999999993151
+  9.999999999983803
+ 28.00000000006354
+  2.6599999999829675
 ```
 
 
@@ -627,12 +627,12 @@ opt = Opt(:GN_ESCH, 3)
 ```
 
 ```
-72.183 s (61600130 allocations: 8.01 GiB)
+69.220 s (122320138 allocations: 7.96 GiB)
 retcode: MaxIters
 u: 3-element Vector{Float64}:
-  9.994079534922546
- 28.061433072493116
-  2.71856766081671
+ 10.278341521695662
+ 27.425038420522316
+  2.4262682374495395
 ```
 
 
@@ -648,12 +648,12 @@ optprob = OptimizationProblem(obj_short, LocIniPar, lb = xlow_bounds, ub = xhigh
 ```
 
 ```
-31.107 ms (32997 allocations: 4.52 MiB)
+29.227 ms (61923 allocations: 4.29 MiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
- 10.000000000000089
- 27.99999999999836
-  2.6600000000010318
+ 10.00000000000008
+ 27.999999999998437
+  2.6600000000010393
 ```
 
 
@@ -664,7 +664,7 @@ opt = Opt(:LN_NELDERMEAD, 3)
 ```
 
 ```
-101.488 ms (107445 allocations: 14.76 MiB)
+95.198 ms (202107 allocations: 14.00 MiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
   9.999999999999293
@@ -680,12 +680,12 @@ opt = Opt(:LD_SLSQP, 3)
 ```
 
 ```
-15.424 ms (15092 allocations: 2.53 MiB)
+14.332 ms (28389 allocations: 2.42 MiB)
 retcode: Failure
 u: 3-element Vector{Float64}:
- 10.000000000000107
+ 10.000000000000105
  27.999999999998312
-  2.6600000000010358
+  2.6600000000010326
 ```
 
 
@@ -719,26 +719,23 @@ SciMLBenchmarks.weave_file("benchmarks/ParameterEstimation","LorenzParameterEsti
 Computer Information:
 
 ```
-Julia Version 1.10.11
-Commit a2b11907d7b (2026-03-09 14:59 UTC)
+Julia Version 1.11.9
+Commit 53a02c0720c (2026-02-06 00:27 UTC)
 Build Info:
   Official https://julialang.org/ release
 Platform Info:
   OS: Linux (x86_64-linux-gnu)
   CPU: 128 × AMD EPYC 7502 32-Core Processor
   WORD_SIZE: 64
-  LIBM: libopenlibm
-  LLVM: libLLVM-15.0.7 (ORCJIT, znver2)
-Threads: 128 default, 0 interactive, 64 GC (on 128 virtual cores)
-Environment:
-  JULIA_NUM_THREADS = auto
+  LLVM: libLLVM-16.0.6 (ORCJIT, znver2)
+Threads: 1 default, 0 interactive, 1 GC (on 128 virtual cores)
 
 ```
 
 Package Information:
 
 ```
-Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.jl/benchmarks/ParameterEstimation/Project.toml`
+Status `~/sandbox/tmp_20260723_161333_68786/SciMLBenchmarks.jl/benchmarks/ParameterEstimation/Project.toml`
 ⌃ [6e4b80f9] BenchmarkTools v1.6.0
 ⌃ [a134a8b2] BlackBoxOptim v0.6.3
 ⌃ [1130ab10] DiffEqParamEstim v2.2.0
@@ -753,7 +750,7 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
 ⌃ [65888b18] ParameterizedFunctions v5.17.2
 ⌃ [91a5bcdd] Plots v1.40.9
 ⌅ [731186ca] RecursiveArrayTools v3.27.4
-  [31c91b34] SciMLBenchmarks v0.1.3
+⌃ [31c91b34] SciMLBenchmarks v0.1.3
 Info Packages marked with ⌃ and ⌅ have new versions available. Those with ⌃ may be upgradable, but those with ⌅ are restricted by compatibility constraints from upgrading. To see why use `status --outdated`
 Warning The project dependencies or compat requirements have changed since the manifest was last resolved. It is recommended to `Pkg.resolve()` or consider `Pkg.update()` if necessary.
 ```
@@ -761,7 +758,7 @@ Warning The project dependencies or compat requirements have changed since the m
 And the full manifest:
 
 ```
-Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.jl/benchmarks/ParameterEstimation/Manifest.toml`
+Status `~/sandbox/tmp_20260723_161333_68786/SciMLBenchmarks.jl/benchmarks/ParameterEstimation/Manifest.toml`
 ⌃ [47edcb42] ADTypes v1.12.1
   [1520ce14] AbstractTrees v0.4.5
 ⌃ [7d9f7c33] Accessors v0.1.41
@@ -772,7 +769,7 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
 ⌃ [4c555306] ArrayLayouts v1.11.0
 ⌃ [6e4b80f9] BenchmarkTools v1.6.0
 ⌅ [e2ed5e7c] Bijections v0.1.9
-  [d1d4a3ce] BitFlags v0.1.9
+⌃ [d1d4a3ce] BitFlags v0.1.9
   [62783981] BitTwiddlingConvenienceFunctions v0.1.6
 ⌃ [a134a8b2] BlackBoxOptim v0.6.3
 ⌃ [8e7c35d0] BlockArrays v1.3.0
@@ -780,7 +777,7 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
   [fa961155] CEnum v0.5.0
 ⌃ [2a0fbf3d] CPUSummary v0.2.6
   [a9c8d775] CPUTime v1.0.0
-  [00ebfdb7] CSTParser v3.4.3
+⌃ [00ebfdb7] CSTParser v3.4.3
   [49dc2e85] Calculus v0.5.2
 ⌃ [d360d2e6] ChainRulesCore v1.25.1
   [fb6a15b2] CloseOpenIntervals v0.1.13
@@ -793,29 +790,29 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
 ⌅ [a80b9123] CommonMark v0.8.15
 ⌃ [38540f10] CommonSolve v0.2.4
   [bbf7d656] CommonSubexpressions v0.3.1
-  [f70d9fcc] CommonWorldInvalidations v1.0.0
+⌃ [f70d9fcc] CommonWorldInvalidations v1.0.0
 ⌃ [34da2185] Compat v4.16.0
   [b152e2b5] CompositeTypes v0.1.4
   [a33af91c] CompositionsBase v0.1.2
-  [2569d6c7] ConcreteStructs v0.2.3
+⌃ [2569d6c7] ConcreteStructs v0.2.3
 ⌃ [f0e56b4a] ConcurrentUtilities v2.4.3
 ⌃ [8f4d0f93] Conda v1.10.2
   [88cd18e8] ConsoleProgressMonitor v0.1.2
 ⌃ [187b0558] ConstructionBase v1.5.8
   [d38c429a] Contour v0.6.3
   [adafc99b] CpuId v0.3.1
-  [a8cc5b0e] Crayons v4.1.1
+⌃ [a8cc5b0e] Crayons v4.1.1
   [9a962f9c] DataAPI v1.16.0
 ⌅ [864edb3b] DataStructures v0.18.20
   [e2d170a0] DataValueInterfaces v1.0.0
   [8bb1440f] DelimitedFiles v1.9.1
   [39dd38d3] Dierckx v0.5.4
-⌃ [2b5f629d] DiffEqBase v6.161.0
+⌅ [2b5f629d] DiffEqBase v6.161.0
 ⌃ [459566f4] DiffEqCallbacks v4.2.2
 ⌃ [77a26b50] DiffEqNoiseProcess v5.24.1
 ⌃ [1130ab10] DiffEqParamEstim v2.2.0
   [163ba53b] DiffResults v1.1.0
-  [b552c78f] DiffRules v1.15.1
+⌃ [b552c78f] DiffRules v1.15.1
 ⌅ [a0c0ee7d] DifferentiationInterface v0.6.32
 ⌃ [8d63f2c5] DispatchDoctor v0.4.19
 ⌃ [31c24e10] Distributions v0.25.117
@@ -827,7 +824,7 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
 ⌃ [f151be2c] EnzymeCore v0.8.8
   [460bff9d] ExceptionUnwrapping v0.1.11
 ⌃ [d4d017d3] ExponentialUtilities v1.27.0
-  [e2ba6199] ExprTools v0.1.10
+⌃ [e2ba6199] ExprTools v0.1.10
 ⌅ [6b7a57c9] Expronicon v0.8.5
 ⌃ [c87230d0] FFMPEG v0.4.2
 ⌅ [7034ab61] FastBroadcast v0.3.5
@@ -836,9 +833,9 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
 ⌃ [29a986be] FastLapackInterface v2.0.4
 ⌃ [a4df4552] FastPower v1.1.1
 ⌃ [1a297f60] FillArrays v1.13.0
-⌃ [64ca27bc] FindFirstFunctions v1.4.1
+⌅ [64ca27bc] FindFirstFunctions v1.4.1
 ⌃ [6a86dc24] FiniteDiff v2.26.2
-  [53c48c17] FixedPointNumbers v0.8.5
+⌅ [53c48c17] FixedPointNumbers v0.8.5
   [1fa38f19] Format v1.3.7
 ⌅ [f6369f11] ForwardDiff v0.10.38
   [069b7b12] FunctionWrappers v1.1.3
@@ -851,7 +848,7 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
 ⌃ [c27321d9] Glob v1.3.1
 ⌃ [86223c79] Graphs v1.12.0
   [42e2da0e] Grisu v1.0.2
-⌃ [cd3eb016] HTTP v1.10.15
+⌅ [cd3eb016] HTTP v1.10.15
 ⌅ [eafb193a] Highlights v0.5.3
 ⌃ [3e5b6fbb] HostCPUFeatures v0.1.17
 ⌃ [34004b35] HypergeometricFunctions v0.3.27
@@ -875,22 +872,22 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
 ⌃ [23fbe1c1] Latexify v0.16.5
   [10f19ff3] LayoutPointers v0.1.17
 ⌃ [5078a376] LazyArrays v2.4.0
-⌃ [1d6d02ad] LeftChildRightSiblingTrees v0.2.0
+⌅ [1d6d02ad] LeftChildRightSiblingTrees v0.2.0
 ⌃ [87fe0de2] LineSearch v0.1.4
 ⌃ [d3d80556] LineSearches v7.3.0
 ⌅ [7ed4a6bd] LinearSolve v2.38.0
-  [2ab3a3ac] LogExpFunctions v0.3.29
+⌅ [2ab3a3ac] LogExpFunctions v0.3.29
 ⌃ [e6f89c97] LoggingExtras v1.1.0
 ⌃ [bdcacae8] LoopVectorization v0.12.171
   [d8e11817] MLStyle v0.4.17
 ⌃ [1914dd2f] MacroTools v0.5.15
   [d125e4d3] ManualMemory v0.1.8
-  [bb5d69b7] MaybeInplace v0.1.4
+⌃ [bb5d69b7] MaybeInplace v0.1.4
 ⌃ [739be429] MbedTLS v1.1.9
 ⌃ [442fdcdd] Measures v0.3.2
   [e1d29d7a] Missings v1.2.0
 ⌅ [961ee093] ModelingToolkit v9.61.0
-  [46d2c3a1] MuladdMacro v0.2.4
+⌃ [46d2c3a1] MuladdMacro v0.2.4
 ⌃ [102ac46a] MultivariatePolynomials v0.5.7
 ⌃ [ffc61752] Mustache v1.0.20
 ⌃ [d8a4904e] MutableArithmetics v1.6.2
@@ -909,42 +906,42 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
 ⌃ [3e6eede4] OptimizationBBO v0.4.0
 ⌅ [bca83a33] OptimizationBase v2.4.0
 ⌃ [4e6fcdb7] OptimizationNLopt v0.3.2
-⌃ [bac558e1] OrderedCollections v1.7.0
+⌅ [bac558e1] OrderedCollections v1.7.0
 ⌃ [1dea7af3] OrdinaryDiffEq v6.90.1
-⌃ [89bda076] OrdinaryDiffEqAdamsBashforthMoulton v1.1.0
-⌃ [6ad6398a] OrdinaryDiffEqBDF v1.2.0
+⌅ [89bda076] OrdinaryDiffEqAdamsBashforthMoulton v1.1.0
+⌅ [6ad6398a] OrdinaryDiffEqBDF v1.2.0
 ⌅ [bbf590c4] OrdinaryDiffEqCore v1.15.1
-⌃ [50262376] OrdinaryDiffEqDefault v1.2.0
+⌅ [50262376] OrdinaryDiffEqDefault v1.2.0
 ⌅ [4302a76b] OrdinaryDiffEqDifferentiation v1.3.0
-⌃ [9286f039] OrdinaryDiffEqExplicitRK v1.1.0
-⌃ [e0540318] OrdinaryDiffEqExponentialRK v1.2.0
-⌃ [becaefa8] OrdinaryDiffEqExtrapolation v1.3.0
-⌃ [5960d6e9] OrdinaryDiffEqFIRK v1.6.0
-⌃ [101fe9f7] OrdinaryDiffEqFeagin v1.1.0
-⌃ [d3585ca7] OrdinaryDiffEqFunctionMap v1.1.1
-⌃ [d28bc4f8] OrdinaryDiffEqHighOrderRK v1.1.0
-⌃ [9f002381] OrdinaryDiffEqIMEXMultistep v1.2.0
-⌃ [521117fe] OrdinaryDiffEqLinear v1.1.0
-⌃ [1344f307] OrdinaryDiffEqLowOrderRK v1.2.0
-⌃ [b0944070] OrdinaryDiffEqLowStorageRK v1.2.1
-⌃ [127b3ac7] OrdinaryDiffEqNonlinearSolve v1.3.0
-⌃ [c9986a66] OrdinaryDiffEqNordsieck v1.1.0
-⌃ [5dd0a6cf] OrdinaryDiffEqPDIRK v1.2.0
-⌃ [5b33eab2] OrdinaryDiffEqPRK v1.1.0
-⌃ [04162be5] OrdinaryDiffEqQPRK v1.1.0
-⌃ [af6ede74] OrdinaryDiffEqRKN v1.1.0
-⌃ [43230ef6] OrdinaryDiffEqRosenbrock v1.4.0
-⌃ [2d112036] OrdinaryDiffEqSDIRK v1.2.0
-⌃ [669c94d9] OrdinaryDiffEqSSPRK v1.2.0
-⌃ [e3e12d00] OrdinaryDiffEqStabilizedIRK v1.2.0
-⌃ [358294b1] OrdinaryDiffEqStabilizedRK v1.1.0
-⌃ [fa646aed] OrdinaryDiffEqSymplecticRK v1.1.0
-⌃ [b1df2697] OrdinaryDiffEqTsit5 v1.1.0
-⌃ [79d7bb75] OrdinaryDiffEqVerner v1.1.1
+⌅ [9286f039] OrdinaryDiffEqExplicitRK v1.1.0
+⌅ [e0540318] OrdinaryDiffEqExponentialRK v1.2.0
+⌅ [becaefa8] OrdinaryDiffEqExtrapolation v1.3.0
+⌅ [5960d6e9] OrdinaryDiffEqFIRK v1.6.0
+⌅ [101fe9f7] OrdinaryDiffEqFeagin v1.1.0
+⌅ [d3585ca7] OrdinaryDiffEqFunctionMap v1.1.1
+⌅ [d28bc4f8] OrdinaryDiffEqHighOrderRK v1.1.0
+⌅ [9f002381] OrdinaryDiffEqIMEXMultistep v1.2.0
+⌅ [521117fe] OrdinaryDiffEqLinear v1.1.0
+⌅ [1344f307] OrdinaryDiffEqLowOrderRK v1.2.0
+⌅ [b0944070] OrdinaryDiffEqLowStorageRK v1.2.1
+⌅ [127b3ac7] OrdinaryDiffEqNonlinearSolve v1.3.0
+⌅ [c9986a66] OrdinaryDiffEqNordsieck v1.1.0
+⌅ [5dd0a6cf] OrdinaryDiffEqPDIRK v1.2.0
+⌅ [5b33eab2] OrdinaryDiffEqPRK v1.1.0
+⌅ [04162be5] OrdinaryDiffEqQPRK v1.1.0
+⌅ [af6ede74] OrdinaryDiffEqRKN v1.1.0
+⌅ [43230ef6] OrdinaryDiffEqRosenbrock v1.4.0
+⌅ [2d112036] OrdinaryDiffEqSDIRK v1.2.0
+⌅ [669c94d9] OrdinaryDiffEqSSPRK v1.2.0
+⌅ [e3e12d00] OrdinaryDiffEqStabilizedIRK v1.2.0
+⌅ [358294b1] OrdinaryDiffEqStabilizedRK v1.1.0
+⌅ [fa646aed] OrdinaryDiffEqSymplecticRK v1.1.0
+⌅ [b1df2697] OrdinaryDiffEqTsit5 v1.1.0
+⌅ [79d7bb75] OrdinaryDiffEqVerner v1.1.1
 ⌃ [90014a1f] PDMats v0.11.32
   [65ce6f38] PackageExtensionCompat v1.0.2
 ⌃ [65888b18] ParameterizedFunctions v5.17.2
-  [d96e819e] Parameters v0.12.3
+⌅ [d96e819e] Parameters v0.12.3
 ⌃ [69de0a69] Parsers v2.8.1
   [06bb1623] PenaltyFunctions v0.3.0
   [b98c9c47] Pipe v1.3.0
@@ -977,9 +974,9 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
 ⌃ [7e49a35a] RuntimeGeneratedFunctions v0.5.13
 ⌃ [9dfe8606] SCCNonlinearSolve v1.0.0
   [94e857df] SIMDTypes v0.1.0
-  [476501e8] SLEEFPirates v0.6.43
+⌃ [476501e8] SLEEFPirates v0.6.43
 ⌅ [0bca4576] SciMLBase v2.72.1
-  [31c91b34] SciMLBenchmarks v0.1.3
+⌃ [31c91b34] SciMLBenchmarks v0.1.3
 ⌃ [19f34311] SciMLJacobianOperators v0.1.1
 ⌅ [c0aeaf25] SciMLOperators v0.3.12
 ⌃ [53ae85a6] SciMLStructures v1.6.1
@@ -1003,9 +1000,10 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
 ⌃ [0d7ed370] StaticArrayInterface v1.8.0
 ⌃ [90137ffa] StaticArrays v1.9.10
 ⌃ [1e83bf80] StaticArraysCore v1.4.3
+⌃ [10745b16] Statistics v1.10.0
 ⌃ [82ae8749] StatsAPI v1.7.0
 ⌃ [2913bbd2] StatsBase v0.34.4
-⌃ [4c63d2b9] StatsFuns v1.3.2
+⌅ [4c63d2b9] StatsFuns v1.3.2
 ⌃ [7792a7ef] StrideArraysCore v0.5.7
   [69024149] StringEncodings v0.3.7
 ⌃ [2efcf032] SymbolicIndexingInterface v0.3.37
@@ -1019,7 +1017,7 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
   [5d786b92] TerminalLoggers v0.1.7
   [1c621080] TestItems v1.0.0
 ⌃ [8290d209] ThreadingUtilities v0.5.2
-⌃ [a759f4b9] TimerOutputs v0.5.26
+⌅ [a759f4b9] TimerOutputs v0.5.26
   [0796e94c] Tokenize v0.5.29
   [3bb67fe8] TranscodingStreams v0.11.3
   [d5829a12] TriangularSolve v0.2.1
@@ -1055,11 +1053,11 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
 ⌃ [f8c6e375] Git_jll v2.47.1+0
 ⌃ [7746bdde] Glib_jll v2.82.4+0
 ⌃ [3b182d85] Graphite2_jll v1.3.14+1
-⌃ [2e76f6c2] HarfBuzz_jll v8.5.0+0
+⌅ [2e76f6c2] HarfBuzz_jll v8.5.0+0
 ⌃ [1d5cc7b8] IntelOpenMP_jll v2025.0.4+0
 ⌃ [aacddb02] JpegTurbo_jll v3.1.1+0
 ⌃ [c1c5ebd0] LAME_jll v3.100.2+0
-  [88015f11] LERC_jll v4.0.1+0
+⌃ [88015f11] LERC_jll v4.0.1+0
 ⌃ [1d63c593] LLVMOpenMP_jll v18.1.7+0
   [dd4b983a] LZO_jll v2.10.3+0
   [81d17ec3] L_BFGS_B_jll v3.0.1+0
@@ -1161,7 +1159,6 @@ Status `/julia/github-runners/amdci1-1/_work/SciMLBenchmarks.jl/SciMLBenchmarks.
   [1a1011a3] SharedArrays
   [6462fe0b] Sockets
   [2f01184e] SparseArrays v1.10.0
-  [10745b16] Statistics v1.10.0
   [4607b0f0] SuiteSparse
   [fa267f1f] TOML v1.0.3
   [a4e569a6] Tar v1.10.0
